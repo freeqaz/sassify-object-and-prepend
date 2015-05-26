@@ -23,7 +23,7 @@
     "test",
     "build"
   ],
-  "author": "freeqaz@freeqaz.com",
+  "author": "freeqaz <freeqaz@freeqaz.com> (http://freeqaz.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/freeqaz/sassify-object-and-prepend/issues"
