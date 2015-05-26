@@ -3,7 +3,7 @@ var fs = require('fs');
 var test = require('tape');
 var sassVariablesUtil = require('../');
 
-test('Appends variables and writes as expected', function t(assert) {
+test('Appends variables and writes as expected (real fs)', function t(assert) {
   var outputFile = sassVariablesUtil({
     blue: '#0000FF'
   }, './test/test.scss', './test/test-output.scss');

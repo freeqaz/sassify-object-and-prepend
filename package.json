@@ -1,6 +1,6 @@
 {
   "name": "sassify-object-and-prepend",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small wrapper around sassify-object for use during builds.",
   "main": "index.js",
   "scripts": {

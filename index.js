@@ -12,14 +12,17 @@ module.exports = sassVariablesUtilFn;
  * @param {object} variables Javascript object to Sassify.
  * @param {string} inputPath Path to file to read.
  * @param {string} outputPath Path to file to write.
+ * @param {object} xfs Optional fake filesystem module to call writeFileSync on.
  * @returns {string} Output that was written to file.
  */
-function sassVariablesUtilFn(variables, inputPath, outputPath) {
-  var inputFile = fs.readFileSync(inputPath);
+function sassVariablesUtilFn(variables, inputPath, outputPath, xfs) {
+  xfs = xfs || fs;
+
+  var inputFile = xfs.readFileSync(inputPath);
 
   var outputFile = sassVariables(variables, inputFile);
 
-  fs.writeFileSync(outputPath, outputFile);
+  xfs.writeFileSync(outputPath, outputFile);
 
   return outputFile;
 }
