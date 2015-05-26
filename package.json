@@ -1,6 +1,6 @@
 {
   "name": "sassify-object-and-prepend",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small wrapper around sassify-object for use during builds.",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "tape": "^4.0.0"
   },
   "dependencies": {
-    "sassify-object": "1.0.0",
+    "sassify-object": "1.0.1",
     "xtend": "^4.0.0"
   }
 }
