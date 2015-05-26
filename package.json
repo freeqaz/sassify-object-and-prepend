@@ -1,7 +1,7 @@
 {
-  "name": "sass-variables-util",
+  "name": "sassify-object-and-prepend",
   "version": "1.0.0",
-  "description": "A small wrapper around sass-variables for use during builds.",
+  "description": "A small wrapper around sassify-object for use during builds.",
   "main": "index.js",
   "scripts": {
     "changelog-major": "build-changelog --major",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freeqaz/sass-variables-util.git"
+    "url": "git+https://github.com/freeqaz/sassify-object-and-prepend.git"
   },
   "keywords": [
     "sass",
@@ -26,9 +26,9 @@
   "author": "freeqaz@freeqaz.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/freeqaz/sass-variables-util/issues"
+    "url": "https://github.com/freeqaz/sassify-object-and-prepend/issues"
   },
-  "homepage": "https://github.com/freeqaz/sass-variables-util#readme",
+  "homepage": "https://github.com/freeqaz/sassify-object-and-prepend#readme",
   "devDependencies": {
     "build-changelog": "^2.1.2",
     "istanbul": "^0.3.13",
@@ -37,7 +37,7 @@
     "tape": "^4.0.0"
   },
   "dependencies": {
-    "sass-variables": "1.0.0",
+    "sassify-object": "1.0.0",
     "xtend": "^4.0.0"
   }
 }
