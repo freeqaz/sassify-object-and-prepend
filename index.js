@@ -18,7 +18,7 @@ module.exports = sassVariablesUtilFn;
 function sassVariablesUtilFn(variables, inputPath, outputPath, xfs) {
   xfs = xfs || fs;
 
-  var inputFile = xfs.readFileSync(inputPath);
+  var inputFile = xfs.readFileSync(inputPath, 'utf8');
 
   var outputFile = sassifyObject(variables, inputFile);
 
