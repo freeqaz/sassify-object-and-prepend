@@ -1,6 +1,6 @@
 'use strict';
 var fs = require('fs');
-var sassVariables = require('sass-variables');
+var sassifyObject = require('sassify-object');
 
 module.exports = sassVariablesUtilFn;
 
@@ -20,7 +20,7 @@ function sassVariablesUtilFn(variables, inputPath, outputPath, xfs) {
 
   var inputFile = xfs.readFileSync(inputPath);
 
-  var outputFile = sassVariables(variables, inputFile);
+  var outputFile = sassifyObject(variables, inputFile);
 
   xfs.writeFileSync(outputPath, outputFile);
 
