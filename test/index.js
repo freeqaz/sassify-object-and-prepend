@@ -10,7 +10,7 @@ test('Appends variables and writes as expected (real fs)', function t(assert) {
 
   var split = outputFile.split('\n');
 
-  assert.equal(split[0], '$blue: "#0000FF";', 'blue is blue');
+  assert.equal(split[0], '$blue: #0000FF;', 'blue is blue');
   assert.equal(
     split[1],
     '.whatever { color: $blue; }',

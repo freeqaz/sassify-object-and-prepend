@@ -1,32 +1,35 @@
-# sass-variables-util
+# sassify-object-and-prepend
 
-A small wrapper around sass-variables for use during builds.
+A small wrapper around sassify-object for use during builds.
 
 ## Example
 
 ```javascript
+import sassifyObjectAndPrepend from 'sassify-object-and-prepend';
+
 // Input file path to be read from.
 // Example Sass input file might look like:
 /*
 .whatever { color: $blue; }
 */
-var inputFilePath = './test/test.scss';
+const inputFilePath = './test/test.scss';
 
 // Output file with variables injected.
-var outputFilePath = './test/test-output.scss';
+const outputFilePath = './test/test-output.scss';
 
 // Variables to be injected into the file.
 // This will turn into:
 // $blue: "#0000FF";
-var sampleVariables = {
+const sampleVariables = {
   blue: '#0000FF'
 };
 
 // Simple call case.
-sassVariablesUtil(sampleVariables, inputFilePath, outputFilePath);
+sassifyObjectAndPrepend(sampleVariables, inputFilePath, outputFilePath);
 
 // Output contents are returned, in the event you want to use them.
-var outputFileContents = sassVariablesUtil(sampleVariables, inputFilePath, outputFilePath);
+const outputFileContents = 
+  sassifyObjectAndPrepend(sampleVariables, inputFilePath, outputFilePath);
 
 // Output file would look like:
 /*
